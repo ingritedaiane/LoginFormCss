@@ -24,12 +24,14 @@
     background-color: var(--primary-color);
 }
 
-.container {
+body {
     background-color: var(--background);
+}
+.container {
+    height: 100vh;
     display: grid;
     grid-template-areas: "main aside";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
 }
 
 .cadastro {
@@ -48,7 +50,6 @@ main {
     height: 512px;
     margin: 220px 72px 194px 354px;
 
-
     background-color: var(--form-background);
     box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
     border-radius: 4px;
@@ -57,7 +58,6 @@ main {
     flex-direction: column;
     grid-area: main;
     position: absolute;
-
 }
 
 main h1 img  {
@@ -81,7 +81,6 @@ main h1 {
     line-height: 24px;
     color: var(--text-base);
     margin-bottom: 27px;
-  
 }
 
 .login label {
@@ -106,7 +105,6 @@ form .mail {
     background: url("./assets/mail.svg") no-repeat left;
     padding-left: 30px;
 }
-
 
 .senha {
     width: 335px;
@@ -155,7 +153,6 @@ main a {
     font-size: 14px;
     line-height: 21px;
     color: var(--primary-color);
-
 }
 
 button {
@@ -177,7 +174,6 @@ button {
     color: #473404;
     margin-top: 20px;
     margin-bottom: 14px;
-
 }
 
 .registrar {
@@ -193,20 +189,20 @@ button {
 aside figure img {
     grid-area: aside;
     width: 720px;
-    height: 900px;
+    height: 820px;
     position: absolute;
     left: 980px;
+    background-color:var(--background);
 }
 
 footer {
     font-family: 'Poppins';
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    height: auto;
+    flex-direction: column;
+    height: 10%;
+    width: 100vw;
+    text-align: center;
     font-size: 22px;
-
     background-color:var(--background);
     color: var(--primary-color);
 }
@@ -222,31 +218,38 @@ footer img {
     align-items: center;
     margin-left: 5px;
     vertical-align: middle;
-
  }
 
-@media (max-width: 768px){
+@media (max-width: 680px) {
+
     :root {
       font-size: 14px;
     }
 
-    main {
+    body {
+        width: 375px;
+        height: 100vh;
+        background-color: var(--background);
+    }
+
+    .container {
         display: flex;
-        right: 0;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
 
     .cadastro {
-        width: 430px;
-        height: 812px;
-        margin: 0 20px 20px 10px;
+        width: 365px;
+        height: 612px;
+        margin: 10px;
         border: 2px;
         box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
-        padding: 50px;
+        padding: 20px;
     }
 
     main {
         background: url("./assets/logo.svg") no-repeat top 40px left 30px;
-        grid-area: main;
         box-shadow: none;
     }
 
@@ -260,17 +263,20 @@ footer img {
 
     #visibilidade{
         position: absolute;
-        top: 62%;
-        left: 64%;
+        top: 58%;
+        left: 58%;
     }
 
     aside figure img {
         display: none;
     }
   
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    footer p, footer a {
+        display: block;
+        text-justify: distribute-all-lines;
+        margin-left: 20px;
+        font-size: 15px;
+        position: relative;
     }
+    
   }
