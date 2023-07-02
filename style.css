@@ -35,20 +35,21 @@ body {
 }
 
 .cadastro {
-    margin: 55px 119px 54px 119px;
+    margin: 60px 60px 95px 60px;
+   justify-content: center;
 }
 
 header figure img {
     width: 115px;
     height: 28px;
-    margin: 80px 0 0 350px;
+    margin: 90px 0 0 350px;
     grid-area: main;
 }
 
 main {
-    width: 572px;
-    height: 512px;
-    margin: 220px 72px 194px 354px;
+    width: 480px;
+    height: 600px;
+    margin: 150px 72px 194px 354px;
 
     background-color: var(--form-background);
     box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
@@ -123,8 +124,8 @@ form .mail {
 
 #visibilidade{
     position: absolute;
-    top: 52%;
-    left: 74%;
+    top: 45%;
+    left: 76%;
 }
 
 .checkbox {
@@ -197,26 +198,23 @@ aside figure img {
 
 footer {
     font-family: 'Poppins';
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-    width: 100vw;
+    display: grid;
+    grid-area: main;
     text-align: center;
-    font-size: 22px;
-    background-color:var(--background);
+    font-size: 18px;
     color: var(--primary-color);
 }
 
 footer a {
     text-decoration: none;
     color: var(--primary-color);
+    font-size: 18px;
 }
 
 footer img {
     height: 20px;
     width: 20px;
     align-items: center;
-    margin-left: 5px;
     vertical-align: middle;
  }
 
@@ -226,26 +224,18 @@ footer img {
       font-size: 14px;
     }
 
-    body {
-        width: 375px;
-        height: 100vh;
-        background-color: var(--background);
-    }
-
     .container {
         display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
     }
 
     .cadastro {
-        width: 365px;
-        height: 612px;
+        width: 385px;
+        height: 812px;
         margin: 10px;
         border: 2px;
         box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
-        padding: 20px;
+        padding: 25px;
     }
 
     main {
@@ -263,20 +253,19 @@ footer img {
 
     #visibilidade{
         position: absolute;
-        top: 58%;
-        left: 58%;
+        top: 50%;
+        left: 71%;
     }
 
     aside figure img {
         display: none;
     }
   
-    footer p, footer a {
-        display: block;
-        text-justify: distribute-all-lines;
-        margin-left: 20px;
-        font-size: 15px;
-        position: relative;
+    footer {
+        text-align: center;
+        margin: 10px;
+        width: 370px;
     }
     
   }
+
