@@ -224,9 +224,11 @@ footer img {
       font-size: 14px;
     }
 
-    .container {
+  .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-right: 180px;
     }
 
     .cadastro {
