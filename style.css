@@ -223,43 +223,34 @@ footer img {
     :root {
       font-size: 14px;
     }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
+    body {
         width: 385px;
         height: 812px;
         position: absolute;
     }
 
-    .cadastro {
-        width: 385px;
-        height: 812px;
-        margin: 10px;
-        border: 2px;
-        box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
-        padding: 25px;
-    }
-
-
-    main {
-        background: url("./assets/logo.svg") no-repeat top 40px left 30px;
-        box-shadow: none;
+    .container {
+        display: flex;
+        justify-content: center;
     }
 
     header figure img {
-        display: none;
+       margin-top: 200px;
+       margin-left: auto;
+       position: relative;
+       z-index: 1;
     }
 
     main h1 {
-        margin-top: 56px;
+        margin-top: 41px;
+        margin-bottom: 10px;
     }
 
     #visibilidade{
         position: absolute;
-        top: 50%;
-        left: 71%;
+        top: 54%;
+        left: 76%;
     }
 
     aside figure img {
@@ -267,10 +258,8 @@ footer img {
     }
   
     footer {
-        text-align: center;
-        margin: 10px;
-        width: 370px;
+        position: relative;
+        margin-top: 30px;
     }
     
   }
-
