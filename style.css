@@ -223,12 +223,14 @@ footer img {
     :root {
       font-size: 14px;
     }
-
-  .container {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 180px;
+        justify-content: center;
+        width: 385px;
+        height: 812px;
+        position: absolute;
     }
 
     .cadastro {
@@ -239,6 +241,7 @@ footer img {
         box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
         padding: 25px;
     }
+
 
     main {
         background: url("./assets/logo.svg") no-repeat top 40px left 30px;
