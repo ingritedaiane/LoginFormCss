@@ -35,21 +35,21 @@ body {
 }
 
 .cadastro {
-    margin: 60px 60px 95px 60px;
-   justify-content: center;
+    margin: 2.5rem 2.5rem 5.93rem 2.5rem;
+    justify-content: center;
 }
 
 header figure img {
-    width: 115px;
-    height: 28px;
-    margin: 90px 0 0 350px;
+    width: 7.18rem;
+    height: 1.75rem;
+    margin: 6.63rem 0 0 7.87rem;
     grid-area: main;
 }
 
 main {
-    width: 480px;
-    height: 600px;
-    margin: 150px 72px 194px 354px;
+    width: 572px;
+    height: 512px;
+    margin: 194px 74px 194px 74px;
 
     background-color: var(--form-background);
     box-shadow: 0 0 10px #ffffff, 0 0 8px #e0810c, 0 0 8px #f0e325;
@@ -59,6 +59,7 @@ main {
     flex-direction: column;
     grid-area: main;
     position: absolute;
+    align-items: center;
 }
 
 main h1 img  {
@@ -104,7 +105,8 @@ form .mail {
 
 #mail {
     background: url("./assets/mail.svg") no-repeat left;
-    padding-left: 30px;
+    background-position-x: 3%;
+    padding-left: 40px;
 }
 
 .senha {
@@ -119,13 +121,14 @@ form .mail {
 
 #senha {
     background: url("./assets/lock.svg") no-repeat left;
-    padding-left: 30px;
+    background-position-x: 3%;
+    padding-left: 40px;
 }
 
 #visibilidade{
     position: absolute;
-    top: 45%;
-    left: 76%;
+    top: 49%;
+    left: 74%;
 }
 
 .checkbox {
@@ -218,39 +221,38 @@ footer img {
     vertical-align: middle;
  }
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
 
-    :root {
-      font-size: 14px;
-    }
-
-    body {
-        width: 385px;
-        height: 812px;
-        position: absolute;
-    }
 
     .container {
         display: flex;
         justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    main {
+        width: 23.43rem;
+        height: 50.75rem;
+        background: url(./assets/logo.svg) no-repeat;
+        background-position-y: 5%;
+        background-position-x: 10%;
+        align-items: center;
     }
 
     header figure img {
-       margin-top: 200px;
-       margin-left: auto;
-       position: relative;
-       z-index: 1;
+        display: none;
     }
 
     main h1 {
-        margin-top: 41px;
-        margin-bottom: 10px;
+        margin-top: 4.25rem;
+        margin-bottom: 0.312rem;
     }
 
     #visibilidade{
         position: absolute;
-        top: 54%;
-        left: 76%;
+        top: 40%;
+        left: 87%;
     }
 
     aside figure img {
@@ -259,7 +261,7 @@ footer img {
   
     footer {
         position: relative;
-        margin-top: 30px;
+        margin-top: 2rem;
     }
     
   }
